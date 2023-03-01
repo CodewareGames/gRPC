@@ -23,13 +23,13 @@
 	],
 	"PreBuildSteps": {
 		"Win64": [
-			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat"
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat $(EngineDir)"
 		],
 		"Mac": [
-			"$(PluginDir)\\ThirdParty\\BuildForUE\\Mac\\BuildForMac.command"
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Mac\\BuildForMac.command $(EngineDir)"
 		],
 		"Unix": [
-			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat"
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat $(EngineDir)"
 		]
 	}
 }
