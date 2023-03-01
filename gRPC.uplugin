@@ -20,5 +20,16 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
-	]
+	],
+	"PreBuildSteps": {
+		"Win64": [
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat"
+		],
+		"Mac": [
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Mac\\BuildForMac.command"
+		],
+		"Unix": [
+			"$(PluginDir)\\ThirdParty\\BuildForUE\\Windows\\BuildForWindows.bat"
+		]
+	}
 }
